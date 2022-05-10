@@ -1,31 +1,15 @@
-package javaAPI;
+package APIConfirm;
 
-public class Member implements Cloneable {
-	//필드
-	public String id;
-	public String name;
-	public String password;
-	public int age;
-	public boolean adult;
+public class Member {
+	private String id;
+	private String name;
 	
-	//생성자
-	public Member(String id, String name, String password, int age, boolean adult) {
+	public Member(String id, String name) {
 		this.id=id;
 		this.name=name;
-		this.password=password;
-		this.age=age;
-		this.adult=adult;
-		
 	}
-	
-	//메소드
-	public Member getMember() {
-		Member cloned=null;
-		try {
-			cloned=(Member) clone();
-		} catch(CloneNotSupportedException e) {
-			
-		}
-		return cloned;
+	@Override
+	public String toString() {
+		return id + ":" + name;
 	}
 }
