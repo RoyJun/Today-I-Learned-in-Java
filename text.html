@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>텍스트 관련 태그들</title>
+    <title>텍스트 관련 스타일</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p > span {
+            text-decoration: line-through;
+        }
+        .eng {
+            font:bold 30px Times;
+            text-transform: capitalize;
+        }
+        h1 {
+            font-size: 50px;
+            /* 그림자 효과
+            text-shadow:2px 2px 5px rgba(0,0,0,0.4);
+            /* 입체적인 효과
+            color: #fff;
+            text-shadow: 7px -7px 0px #000; */
+        }
+    </style>
 </head>
 <body>
-    <h1>나는 제목</h1>
-    <h2>나는 제목</h2>
-    <h3>나는 제목</h3>
-    <h4>나는 제목</h4>
-    <p>내일 죽을 것처럼 오늘을 살고
-        영원히 살 것처럼 내일을 꿈꾸어라</p>
-    <hr>
-    <p> 합리적인 이유 없이 연령만을 이유로 직원의 임금을 깎는 '임금피크제'가 현행 고령자고용법을 위반한 것이므로 무효라는 대법원의 판단이 나왔다.</p>
-    <p>재판부는 "고령자고용법 제4조의4 제1항의 규정 내용과 입법 취지를 고려하면 
-        <br><br>이 조항은 연령 차별을 금지하는 강행규정에 해당한다고 봐야 한다"며 "이 사건 성과연급제(임금피크제)를 전후해 원고에게 부여된 목표 수준이나 업무의 내용에 차이가 있었다고 보기 어렵다"고 판시했다.</p>
-    <address>
-        서울시 용산구 청파동 98-31<br>
-        이메일 : dlsgnqkswja@naver.com<br>
-        전화번호 : 02-777-7777
-    </address>
+    <ul>
+        <li><a href="#">현재상영작</a></li>
+        <li><a href="#">상영예정작</a></li>
+    </ul>
+    <p><span>정상가격 : 50,000</span> > 할인가격 45,000</p>
+    <p class="eng"> have a nice day </p>
+    <h1>SHADOW</h1>
 </body>
-
 </html>
